@@ -5,7 +5,18 @@ namespace AplicacionDePrueba
     public Form1()
     {
       InitializeComponent();
-      this.BackColor= System.Drawing.Color.FromArgb(255, 0, 0);
+      
+    }
+
+    private void btnChangeBackgroundColor_Click(object sender, EventArgs e)
+    {
+      // Change the background color to a random color
+      Random random = new Random();
+      int red = random.Next(256);
+      int green = random.Next(256);
+      int blue = random.Next(256);
+      this.BackColor = System.Drawing.Color.FromArgb(red, green, blue);
+
     }
   }
 }

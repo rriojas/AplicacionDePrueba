@@ -20,20 +20,40 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+    #region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
-        }
-
-        #endregion
+    /// <summary>
+    ///  Required method for Designer support - do not modify
+    ///  the contents of this method with the code editor.
+    /// </summary>
+    private void InitializeComponent()
+    {
+      btnChangeBackgroundColor = new Button();
+      SuspendLayout();
+      // 
+      // btnChangeBackgroundColor
+      // 
+      btnChangeBackgroundColor.Location = new Point(323, 159);
+      btnChangeBackgroundColor.Name = "btnChangeBackgroundColor";
+      btnChangeBackgroundColor.Size = new Size(156, 86);
+      btnChangeBackgroundColor.TabIndex = 0;
+      btnChangeBackgroundColor.Text = "Click me";
+      btnChangeBackgroundColor.UseVisualStyleBackColor = true;
+      btnChangeBackgroundColor.Click += btnChangeBackgroundColor_Click;
+      // 
+      // Form1
+      // 
+      AutoScaleDimensions = new SizeF(7F, 15F);
+      AutoScaleMode = AutoScaleMode.Font;
+      ClientSize = new Size(800, 450);
+      Controls.Add(btnChangeBackgroundColor);
+      Name = "Form1";
+      Text = "Form1";
+      ResumeLayout(false);
     }
+
+    #endregion
+
+    private Button btnChangeBackgroundColor;
+  }
 }
